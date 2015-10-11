@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VpA-7C-Jae">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="NSt-zu-IEW">
+            <objects>
+                <viewController id="VpA-7C-Jae" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J53-cT-fzJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="unl-PJ-aKc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J5t-89-0io">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4qS-Tz-dTx">
+                                <rect key="frame" x="16" y="333" width="51" height="31"/>
+                                <connections>
+                                    <action selector="actionRotateSwitch:" destination="VpA-7C-Jae" eventType="valueChanged" id="wWI-hb-nv9"/>
+                                </connections>
+                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.20000000000000001" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tdD-an-b5I">
+                                <rect key="frame" x="14" y="429" width="292" height="31"/>
+                                <connections>
+                                    <action selector="actionSpeedSlider:" destination="VpA-7C-Jae" eventType="valueChanged" id="jRQ-nC-iOz"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scale" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72e-4r-GwC">
+                                <rect key="frame" x="139" y="286" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Translation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWT-mL-kdW">
+                                <rect key="frame" x="221" y="286" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Speed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jTm-1F-Xsj">
+                                <rect key="frame" x="139" y="392" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rotation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8e3-om-cRc">
+                                <rect key="frame" x="16" y="286" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jOr-VH-UXJ">
+                                <rect key="frame" x="133" y="333" width="51" height="31"/>
+                                <connections>
+                                    <action selector="actionScaleSwitch:" destination="VpA-7C-Jae" eventType="valueChanged" id="Adx-LP-Vxf"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="a9Y-zQ-2PT">
+                                <rect key="frame" x="238" y="333" width="51" height="31"/>
+                                <connections>
+                                    <action selector="actionTranslationSwitch:" destination="VpA-7C-Jae" eventType="valueChanged" id="T2X-ru-jOI"/>
+                                </connections>
+                            </switch>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f9t-vQ-bec">
+                                <color key="backgroundColor" red="0.80000001192092896" green="1" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Earth 3.png" translatesAutoresizingMaskIntoConstraints="NO" id="EmL-A8-1VC">
+                                <rect key="frame" x="85" y="42" width="150" height="150"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DmM-bS-c3j">
+                                <rect key="frame" x="11" y="503" width="293" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment>
+                                        <string key="title">Third	
+
+ third</string>
+                                    </segment>
+                                    <segment title="Fourth"/>
+                                </segments>
+                                <connections>
+                                    <action selector="actionSegmentControl:" destination="VpA-7C-Jae" eventType="valueChanged" id="K65-Wo-t7B"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="sliderSpeed" destination="tdD-an-b5I" id="1pf-S8-799"/>
+                        <outlet property="switchRotation" destination="4qS-Tz-dTx" id="JGG-kF-4Em"/>
+                        <outlet property="switchScale" destination="jOr-VH-UXJ" id="HdN-f1-bKn"/>
+                        <outlet property="switchTranslation" destination="a9Y-zQ-2PT" id="idJ-nL-sav"/>
+                        <outlet property="testImage" destination="EmL-A8-1VC" id="lLK-g9-1QE"/>
+                        <outlet property="testView" destination="f9t-vQ-bec" id="0qh-1b-6sr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qLa-SQ-MJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-151" y="222"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Earth 3.png" width="512" height="512"/>
+    </resources>
+</document>
